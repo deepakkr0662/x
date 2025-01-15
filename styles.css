@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="file"], button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Centering content */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sign-In Page Specific Styles */
+.sign-in-container {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.sign-in-container input[type="text"], .sign-in-container input[type="password"] {
+    margin-bottom: 15px;
+}
+
+/* Sign-up Container */
+.sign-up-container {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the container */
+}
+
+.sign-up-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.sign-up-container .form-group {
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.sign-up-container input[type="text"],
+.sign-up-container input[type="email"],
+.sign-up-container input[type="password"],
+.sign-up-container input[type="number"] {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Button */
+.sign-up-container button {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sign-up-container button:hover {
+    background-color: #45a049;
+}
+
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+    .sign-up-container {
+        width: 90%; /* Reduce width on small screens */
+        padding: 20px;
+    }
+}
+
+/* Navigation Page Specific Styles */
+.navigation-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-container li {
+    padding: 12px;
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation-container li:hover {
+    background-color: #ddd;
+}
+
+/* Graphs Page Specific Styles */
+.graph-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.graph-container .graph {
+    margin-bottom: 20px;
+}
+
+/* Device Status Page Specific Styles */
+.device-status-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.device-status-container h2 {
+    text-align: center;
+}
+
+.device-status-container .status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.device-status-container .status.connected {
+    color: green;
+}
+
+.device-status-container .status.disconnected {
+    color: red;
+}
+
+.device-status-container .status.low-battery {
+    color: orange;
+}
+
+/* Profile Page Specific Styles */
+.profile-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+}
+
+.profile-container .history {
+    margin-top: 20px;
+}
+
+.profile-container .history .item {
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
